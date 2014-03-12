@@ -18,6 +18,7 @@ public class EditActivity extends Activity {
         setContentView(R.layout.activity_edit);
         EditText t = (EditText) findViewById(R.id.etEditItem);
         t.setText(getIntent().getStringExtra(EXTRA_ITEM_NAME));
+        t.setSelection(t.getText().length());
     }
 
     @Override
